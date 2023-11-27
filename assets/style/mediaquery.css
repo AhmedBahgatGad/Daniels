@@ -1,0 +1,8 @@
+@media screen and (max-width: 779px) {
+    html{
+        font-size: 12px;
+    }
+    .contact-area{
+        width: 100%;
+    }
+}

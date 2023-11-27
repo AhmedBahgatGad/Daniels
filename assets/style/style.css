@@ -50,6 +50,9 @@ body{
     font-size: .875rem;
     color: black;
 }
+.navbar-nav .nav-link.active{
+    border-bottom: 2px solid black;
+}
 .nav-item:hover a{
     border-bottom: 2px solid black;
 }
@@ -71,7 +74,7 @@ header{
 }
 .caption h1 span::after{
     content: "I";
-    animation: textchange 7s alternate infinite;
+    animation: textchange 7s infinite;
 }
 @keyframes textchange {
     0%{
@@ -285,7 +288,7 @@ header{
     bottom: 4%;
 }
 .hero-img{
-    background-image: url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255,1),rgba(255, 255, 255,.7)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
     background-size: contain;
     background-position: bottom;
 }
@@ -321,7 +324,7 @@ header{
     background-color: #F7F7F7;
 }
 #services h3{
-    background-image: linear-gradient(rgba(247, 247, 247,.5),rgba(247, 247, 247,.5)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
+    background-image: linear-gradient(rgba(247, 247, 247,.5),rgba(247, 247, 247,0)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
     background-size: contain;
     background-repeat: repeat;
     width: fit-content;
@@ -338,7 +341,7 @@ header{
 
 /* start works */
 #works h3{
-    background-image: linear-gradient(rgba(255, 255, 255,.5),rgba(255, 255, 255,.5)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255,.5),rgba(255, 255, 255,0)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
     background-size: contain;
     background-repeat: repeat;
     width: fit-content;
@@ -361,7 +364,7 @@ header{
 }
 .layerp{
     position: relative;
-    top: 110%;
+    top: 4%;
     left: 0%;
     transition: all .5s;
 }
@@ -390,10 +393,10 @@ border: 1px solid black;
 
 /* start clients */
 #clients{
-    background-color: #F8F9FA;
+    background-color: #F7F7F7;
 }
 #clients h3{
-    background-image: linear-gradient(rgba(247, 247, 247,.5),rgba(247, 247, 247,.5)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
+    background-image: linear-gradient(rgba(247, 247, 247,.5),rgba(247, 247, 247,0)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
     background-size: contain;
     background-repeat: repeat;
     width: fit-content;
@@ -451,13 +454,26 @@ border: 1px solid black;
 
 /* start team */
 #team{
-    background-color: #F8F9FA;
+    background-color: #F7F7F7;
+}
+#team h3{
+    background-image: linear-gradient(rgba(247, 247, 247,.5),rgba(247, 247, 247,0)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    width: fit-content;
 }
 #team .card-bg{
     background-color: #5B5B5B;
     color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+.card-top img{
+    width: 100%;
+    transition: all .7s;
+}
+.card-top:hover img{
+    scale: 1.2;
 }
 .card-layer{
     width: 20%;
@@ -469,7 +485,7 @@ border: 1px solid black;
     right: 40%;
     bottom: 40%;
     visibility: hidden;
-    transition: all .7s;
+    transition: all .5s;
 }
 .card:hover .card-layer{
     visibility: visible;
@@ -487,24 +503,58 @@ border: 1px solid black;
     position: absolute;
     top: 50%;
     left: 0%;
-    transition: all .7s;
-}
-.card-icons i{
-    transform: rotatey(180deg);
+    transition: all .5s;
 }
 .card:hover .card-icons{
     transform: translatex(-50%);
-    left: 10%;
-    transform: rotatey(180deg);
+    left: 5%;
+    transform: rotatey(360deg);
+    transform-origin: center center;
     opacity: 1;
 }
-.card-img-1{
+/* end team */
+
+/* start contact */
+#contact h3{
+    background-image: linear-gradient(rgba(255, 255, 255,.5),rgba(255, 255, 255,0)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    width: fit-content;
+}
+#contact .item i{
+    background-color: #F7F7F7;
     transition: all 1s;
 }
-.card-img-1 img{
-    width: 100%;
+#contact .item:hover i{
+    color: white;
+    background-color: black;
 }
-.card-img-1:hover{
-    scale: 1.2;
+#contact input{
+    outline: none;
+    background-color: #F4F4F4;
 }
-/* end team */
+.contact-area{
+    width: 75%;
+}
+textarea{
+    background-color: #F4F4F4;
+    height: 150px;
+    outline: none;
+}
+#contact .btn-1{
+    transition: all 1s;
+}
+#contact .btn-1:hover{
+    background-color: white;
+    color: black;
+}
+/* end contact */
+
+/* start footer */
+footer{
+    background-color: #1C1C1C;
+}
+footer p{
+    color: #748182;
+}
+/* end footer */

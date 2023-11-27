@@ -1,0 +1,510 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+/* start fonts */
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+.f-f-mon{
+    font-family: "Montserrat";
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+.f-f-pop{
+    font-family: "Poppins";
+}
+.fw-800{
+    font-weight: 800;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.l-s{
+    letter-spacing: 2px;
+}
+.w-10{
+    width: 10%;
+}
+.w-80{
+    width: 80%;
+}
+.w-90{
+    width: 90%;
+}
+.w-95{
+    width: 95%;
+}
+/* end fonts */
+
+/* start nav */
+.nav-link{
+    font-size: .875rem;
+    color: black;
+}
+.nav-item:hover a{
+    border-bottom: 2px solid black;
+}
+/* end nav */
+
+/* start home */
+header{
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../imgs/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top center;
+}
+.caption h5{
+    font-size: 3.125rem;
+}
+.caption h1{
+    font-size: 3.75rem;
+}
+.caption h1 span::after{
+    content: "I";
+    animation: textchange 7s alternate infinite;
+}
+@keyframes textchange {
+    0%{
+        content:"I" ;
+    }
+    1%{
+        content: "LI";
+    }
+    2%{
+        content: "LaI";
+    }
+    3%{
+        content: "LarI";
+    }
+    4%{
+        content: "LarrI";
+    }
+    5%{
+        content: "LarryI";
+    }
+    6%{
+        content: "Larry DI";
+    }
+    7%{
+        content: "Larry DaI";
+    }
+    8%{
+        content: "Larry DanI";
+    }
+    9%{
+        content: "Larry DaniI";
+    }
+    10%{
+        content: "Larry DanieI";
+    }
+    11%{
+        content: "Larry DanielI";
+    }
+    12%{
+        content: "Larry DanielsI";
+    }
+    30%{
+        content: "Larry DanielsI";
+    }
+    31%{
+        content: "Larry DanielI";
+    }
+    32%{
+        content: "Larry DanieI";
+    }
+    33%{
+        content: "Larry DaniI";
+    }
+    34%{
+        content: "Larry DanI";
+    }
+    35%{
+        content: "Larry DaI";
+    }
+    36%{
+        content: "Larry DI";
+    }
+    37%{
+        content: "LarryI";
+    }
+    38%{
+        content: "LarrI";
+    }
+    39%{
+        content: "LarI";
+    }
+    40%{
+        content: "LaI";
+    }
+    41%{
+        content: "LI";
+    }
+    42%{
+        content: "I";
+    }
+    43%{
+        content: "I";
+    }
+    44%{
+        content: "DI";
+    }
+    45%{
+        content: "DeI";
+    }
+    46%{
+        content: "DevI";
+    }
+    47%{
+        content: "DeveI";
+    }
+    48%{
+        content: "DevelI";
+    }
+    49%{
+        content: "DeveloI";
+    }
+    50%{
+        content: "DevelopI";
+    }
+    51%{
+        content: "DevelopeI";
+    }
+    52%{
+        content: "DeveloperI";
+    }
+    70%{
+        content: "DeveloperI";
+    }
+    71%{
+        content: "DevelopeI";
+    }
+    72%{
+        content: "DevelopI";
+    }
+    73%{
+        content: "DeveloI";
+    }
+    74%{
+        content: "DevelI";
+    }
+    75%{
+        content: "DeveI";
+    }
+    76%{
+        content: "DevI";
+    }
+    77%{
+        content: "DeI";
+    }
+    78%{
+        content: "DI";
+    }
+    79%{
+        content: "I";
+    }
+    80%{
+        content: "I";
+    }
+    81%{
+        content: "DI";
+    }
+    82%{
+        content: "DeI";
+    }
+    83%{
+        content: "DesI";
+    }
+    84%{
+        content: "DesiI";
+    }
+    85%{
+        content: "DesigI";
+    }
+    86%{
+        content: "DesignI";
+    }
+    87%{
+        content: "DesigneI";
+    }
+    88%{
+        content: "DesignerI";
+    }
+    91%{
+        content: "DesignerI";
+    }
+    92%{
+        content: "DesigneI";
+    }
+    93%{
+        content: "DesignI";
+    }
+    94%{
+        content: "DesigI";
+    }
+    95%{
+        content: "DesiI";
+    }
+    96%{
+        content: "DesI";
+    }
+    97%{
+        content: "DeI";
+    }
+    98%{
+        content: "DI";
+    }
+    99%{
+        content: "I";
+    }
+    100%{
+        content: "I";
+    }
+}
+.social-icons a{
+    background-color: rgba(0,0,0,.3);
+    color: white;
+}
+/* end home */
+
+/* start about */
+#about h3{
+    font-weight: 800;
+}
+.hero-img img{
+    position: relative;
+    bottom: 4%;
+}
+.hero-img{
+    background-image: url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
+    background-size: contain;
+    background-position: bottom;
+}
+.bar-h{
+    height: 1.5rem;
+}
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#about .buttons button{
+    font-size: 0.8125rem;
+}
+#about .buttons .btn-1{
+    transition: all 1s;
+}
+#about .buttons .btn-1:hover{
+    background-color: white;
+    color: black;
+}
+#about .buttons .btn-2{
+    transition: all 1s;
+}
+#about .buttons .btn-2:hover{
+    background-color: black;
+    color: white;
+}
+/* end about */
+
+/* start services */
+#services{
+    background-color: #F7F7F7;
+}
+#services h3{
+    background-image: linear-gradient(rgba(247, 247, 247,.5),rgba(247, 247, 247,.5)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    width: fit-content;
+}
+#services .item i{
+    background-color: #F7F7F7;
+    transition: all 1s;
+}
+#services .item:hover i{
+    color: white;
+    background-color: black;
+}
+/* end services */
+
+/* start works */
+#works h3{
+    background-image: linear-gradient(rgba(255, 255, 255,.5),rgba(255, 255, 255,.5)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    width: fit-content;
+}
+#works .nav-item, #works .nav-link  {
+    color: #000;
+}
+#works .nav-item .active{
+    border-bottom: 2px solid black;
+}
+.worklayer{
+    background-color: rgb(255,255,255);
+    opacity: 0%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    right: 2%;
+    bottom: 2%;
+    transition: all 1s;
+}
+.layerp{
+    position: relative;
+    top: 110%;
+    left: 0%;
+    transition: all .5s;
+}
+.work-item:hover .worklayer{
+    opacity: 1;
+}
+.work-item:hover .layerp{
+    top: 0%;
+}
+.icon{
+    background-color: #000;
+    transition: all .5s;
+}
+.icon:hover{
+background-color: white;
+border: 1px solid black;
+}
+.icon a{
+    color: white;
+    transition: all .5s;
+}
+.icon:hover a{
+    color: black;
+}
+/* end works */
+
+/* start clients */
+#clients{
+    background-color: #F8F9FA;
+}
+#clients h3{
+    background-image: linear-gradient(rgba(247, 247, 247,.5),rgba(247, 247, 247,.5)), url(../imgs/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    width: fit-content;
+}
+#clients .curs-btn{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+    margin: 8px;
+}
+/* end clients */
+
+/* start counter */
+.number::after{
+    content: "";
+    animation: counter 2s infinite;
+}
+@keyframes counter{
+    0%{
+        content: "0";
+    }
+    10%{
+        content: "100";
+    }
+    20%{
+        content: "150";
+    }
+    30%{
+        content: "230";
+    }
+    40%{
+        content: "350";
+    }
+    50%{
+        content: "470";
+    }
+    60%{
+        content: "520";
+    }
+    70%{
+        content: "650";
+    }
+    80%{
+        content: "700";
+    }
+    90%{
+        content: "850";
+    }
+    100%{
+        content: "850";
+    }
+}
+/* end counter */
+
+/* start team */
+#team{
+    background-color: #F8F9FA;
+}
+#team .card-bg{
+    background-color: #5B5B5B;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card-layer{
+    width: 20%;
+    height: 20%;
+    background-color: rgba(255,255,255,.9);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    right: 40%;
+    bottom: 40%;
+    visibility: hidden;
+    transition: all .7s;
+}
+.card:hover .card-layer{
+    visibility: visible;
+    transform: rotateY(180deg);
+    transform-origin: center;
+    width: 96%;
+    height: 96%;
+    top: 2%;
+    left: 2%;
+    top: 2%;
+    bottom: 2%;
+}
+.card-icons{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transition: all .7s;
+}
+.card-icons i{
+    transform: rotatey(180deg);
+}
+.card:hover .card-icons{
+    transform: translatex(-50%);
+    left: 10%;
+    transform: rotatey(180deg);
+    opacity: 1;
+}
+.card-img-1{
+    transition: all 1s;
+}
+.card-img-1 img{
+    width: 100%;
+}
+.card-img-1:hover{
+    scale: 1.2;
+}
+/* end team */
